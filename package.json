@@ -1,0 +1,17 @@
+{
+	"name": "npm-env-installer",
+	"private": true,
+	"version": "0.0.0",
+	"description": "Use the scripts section of the NPM file to install your dev env.",
+	"repository": { "type": "git", "url": "https://github.com/pagury/npm-env-installer" },
+	"license": "MIT",
+	"dependencies": {
+	},
+	"devDependencies": {
+		"gulp": "^3.8.11"
+	},
+	"scripts": {
+		"preinstall": "node ./npm-pre-install.js",
+		"postinstall": "node ./npm-post-install.js"
+	}
+}
